@@ -5,6 +5,7 @@
   "dependencies": {
     "@bentley/eb-react-components": "1.0.0",
     "@bentley/wuif-tabstrip": "1.0.0",
+    "@bentley/wuif-feature": "1.0.0",
     "autoprefixer": "7.1.6",
     "case-sensitive-paths-webpack-plugin": "2.1.1",
     "chalk": "1.1.3",

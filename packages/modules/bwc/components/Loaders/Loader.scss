@@ -1,0 +1,11 @@
+@import '@bentley/bwc/mixins.scss';
+
+.loader-wrapper {
+    background-color:#eef0f3;
+    text-align:center;
+    line-height:88px;
+}
+
+.medium-loader {
+    @include bwc-loaders-medium;
+}

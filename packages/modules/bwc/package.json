@@ -1,0 +1,17 @@
+{
+  "name": "@bentley/bwc-react-components",
+  "version": "1.0.0",
+  "private": false,
+  "author": "Bentley Systems, Inc.",
+  "dependencies": {
+    "@bentley/bwc": "^5.1.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^9.4.6",
+    "@types/react": "^16.0.38",
+    "@types/react-dom": "^16.0.4",
+    "typescript": "^2.7.2"
+  }
+}

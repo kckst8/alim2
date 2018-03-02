@@ -3,6 +3,7 @@ import './App.css';
 import Tabstrip from '@bentley/wuif-tabstrip';
 import Tag from '@bentley/eb-react-components/components/Tag/Tag';
 import Document from '@bentley/eb-react-components/components/Document/Document';
+import FeatureComponent from '@bentley/wuif-feature';
 
 const logo = require('./logo.svg');
 
