@@ -7,5 +7,3 @@ export interface DocumentProps {
 export const Document = (props: DocumentProps) => {
     return <span>I'm a Document</span>;
 };
-
-export default Document;

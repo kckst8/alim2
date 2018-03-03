@@ -1,11 +1,23 @@
 import * as React from 'react';
-import './Loader.css';
+import './Loader.scss';
 
-export const MediumLoader: any = () => {
-    return 
+interface LoaderProps {
+
+}
+
+export const MediumLoader = (props: LoaderProps) => {
+    return (
         <div className="loader">
-            <div className="medium-loader"><i></i><i></i><i></i><i></i><i></i><i></i></div>
-        </div>;
+            <div className="medium-loader">
+                <i/>
+                <i/>
+                <i/>
+                <i/>
+                <i/>
+                <i/>
+            </div>
+        </div>
+    );
 };
 
 export default MediumLoader;

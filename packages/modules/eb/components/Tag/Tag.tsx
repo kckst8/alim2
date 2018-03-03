@@ -7,5 +7,3 @@ export interface TagProps {
 export const Tag = (props: TagProps) => {
     return <span>I'm a Tag</span>;
 };
-
-export default Tag;
