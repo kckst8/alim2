@@ -5,6 +5,7 @@ export interface Tab {
     text: string;
     content: any; // TODO why not React.StatelessComponent | React.ClassicComponent;  
     active?: boolean;
+    props?: any;
 }
 
 export interface TabStripProps {
@@ -43,7 +44,7 @@ export class Tabstrip extends React.Component<TabStripProps> {
                     if (tab.active) {
                         const TabComponent = tab.content;
                         return <div key={idx}>
-                            <TabComponent />
+                            <TabComponent {...tab.props} />
                         </div>;
                     } else {
                         return null;

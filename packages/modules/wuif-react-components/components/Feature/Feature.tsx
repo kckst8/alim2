@@ -9,6 +9,10 @@ export interface FeatureState {
     Component: any;
 }
 
+function resolve(obj: any) {
+    return obj && obj.__esModule ? obj.default : obj;
+  }
+
 export class Feature extends React.PureComponent {
 
     state: FeatureState;
@@ -24,7 +28,7 @@ export class Feature extends React.PureComponent {
 
     componentWillMount() {
         if (!this.state.Component) {
-            this.props.moduleLoader().then(({Component}) => {
+            this.props.moduleLoader().then((Component) => {
                 this.setState({
                     Component
                 });
@@ -33,19 +37,14 @@ export class Feature extends React.PureComponent {
     }
 
     render() {
-        /* const Component = this.state.Component;
-
-        return (
-            <div>
-                Component ? <Component/> : <MediumLoader/>
-            </div>
-        ); */
-        // const Component = this.state.Component;
-
-        return (
-            <div>
-                <MediumLoader/>
-            </div>
-        );
+        if (this.state.Component) {
+            return React.createElement(resolve(this.state.Component), this.props);
+        } else {
+            return (
+                <div>
+                    <MediumLoader/>
+                </div>
+            ); 
+        }
     }
 }

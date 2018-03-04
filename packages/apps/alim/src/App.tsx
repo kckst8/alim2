@@ -3,6 +3,7 @@ import './App.css';
 import Tabstrip from '@bentley/wuif-react-components/components/Tabstrip';
 import Tag from '@bentley/eb-react-components/components/Tag';
 import Document from '@bentley/eb-react-components/components/Document';
+// import DocumentProps from '@bentley/eb-react-components/components/Document';
 import Feature from '@bentley/wuif-react-components/components/Feature';
 
 const logo = require('./logo.svg');
@@ -11,6 +12,7 @@ const Item = () => import(/* webpackChunkName: "Item" */ '@bentley/eb-react-comp
 
 class App extends React.Component {
 
+  // TODO type these
   tabs = [
     {
         text: 'Tags',
@@ -19,11 +21,19 @@ class App extends React.Component {
     },        
     {
         text: 'Documents',
-        content: Document
+        content: Document,
+        props: {
+          text: 'Document!!!'
+        }
+    },
+    {
+      text: 'Items',
+      content: Feature,
+      props: {
+        moduleLoader: Item
+      }  
     }
   ];
-
-  item = false;
 
   render() {
     return (
@@ -33,10 +43,11 @@ class App extends React.Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <Tabstrip tabs={this.tabs}/>
-          {(this.item) ? <Feature moduleLoader={Item}/> : null}
       </div>
     );
   }
+
+  // {(this.item) ? <Feature moduleLoader={Item}/> : null}
 }
 
 export default App;
