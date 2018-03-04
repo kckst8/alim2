@@ -23,7 +23,7 @@ export class Feature extends React.PureComponent {
     constructor(props: FeatureProps) {
         super(props);
 
-        // init component. Should render the loader initially
+        // init component. Should render the loader 
         this.state = {
             Component: undefined
         };
