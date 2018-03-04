@@ -2,12 +2,12 @@ import * as React from 'react';
 import './App.css';
 import Tabstrip from '@bentley/wuif-react-components/components/Tabstrip';
 import Tag from '@bentley/eb-react-components/components/Tag';
-import Document from '@bentley/eb-react-components/components/Document';
 // import DocumentProps from '@bentley/eb-react-components/components/Document';
 import Feature from '@bentley/wuif-react-components/components/Feature';
 
 const logo = require('./logo.svg');
 
+const Document = () => import(/* webpackChunkName: "Document" */ '@bentley/eb-react-components/components/Document');
 const Item = () => import(/* webpackChunkName: "Item" */ '@bentley/eb-react-components/components/Item');
 
 class App extends React.Component {
@@ -21,9 +21,12 @@ class App extends React.Component {
     },        
     {
         text: 'Documents',
-        content: Document,
+        content: Feature,
         props: {
-          text: 'Document!!!'
+          moduleLoader: Document,
+          featureProps: {
+            text: 'Document!!!'
+          }
         }
     },
     {
