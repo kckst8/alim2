@@ -5,7 +5,8 @@
   "author": "Bentley Systems, Inc.",
   "dependencies": {
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "@bentley/bwc-react-components": "1.0.0"
   },
   "devDependencies": {
     "@types/node": "^9.4.6",
