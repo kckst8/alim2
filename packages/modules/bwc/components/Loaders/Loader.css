@@ -1,0 +1,74 @@
+.loader-wrapper {
+  background-color: #eef0f3;
+  text-align: center;
+  line-height: 88px; }
+
+.medium-loader {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  text-indent: 999em;
+  overflow: hidden;
+  background: transparent; }
+
+@keyframes bwc-loaders-animate-opacity {
+  0% {
+    opacity: 0.85; }
+  50% {
+    opacity: 0.25; }
+  100% {
+    opacity: 0.25; } }
+  .medium-loader > *::before,
+  .medium-loader > *::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 14.5px;
+    width: 3px;
+    height: 8px;
+    border-radius: 3px;
+    background: #2a2f34;
+    transform-origin: 1.5px 16px;
+    animation: bwc-loaders-animate-opacity 1s linear infinite; }
+  .medium-loader.white > *::before,
+  .medium-loader.white > *::after {
+    background: #fff; }
+  .medium-loader > *:nth-child(1)::before {
+    transform: rotate(0deg);
+    animation-delay: 0s; }
+  .medium-loader > *:nth-child(1)::after {
+    transform: rotate(-180deg);
+    animation-delay: -0.5s; }
+  .medium-loader > *:nth-child(2)::before {
+    transform: rotate(-30deg);
+    animation-delay: -0.08333s; }
+  .medium-loader > *:nth-child(2)::after {
+    transform: rotate(-210deg);
+    animation-delay: -0.58333s; }
+  .medium-loader > *:nth-child(3)::before {
+    transform: rotate(-60deg);
+    animation-delay: -0.16667s; }
+  .medium-loader > *:nth-child(3)::after {
+    transform: rotate(-240deg);
+    animation-delay: -0.66667s; }
+  .medium-loader > *:nth-child(4)::before {
+    transform: rotate(-90deg);
+    animation-delay: -0.25s; }
+  .medium-loader > *:nth-child(4)::after {
+    transform: rotate(-270deg);
+    animation-delay: -0.75s; }
+  .medium-loader > *:nth-child(5)::before {
+    transform: rotate(-120deg);
+    animation-delay: -0.33333s; }
+  .medium-loader > *:nth-child(5)::after {
+    transform: rotate(-300deg);
+    animation-delay: -0.83333s; }
+  .medium-loader > *:nth-child(6)::before {
+    transform: rotate(-150deg);
+    animation-delay: -0.41667s; }
+  .medium-loader > *:nth-child(6)::after {
+    transform: rotate(-330deg);
+    animation-delay: -0.91667s; }

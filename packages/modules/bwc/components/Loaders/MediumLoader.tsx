@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './Loader.scss';
+import './Loader.css';
 
 interface LoaderProps {
 
