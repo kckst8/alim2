@@ -1,6 +1,6 @@
 {
-  "name": "@bentley/bwc-react-components",
-  "version": "1.0.0",
+  "name": "@bentley/bwc-ts-react-components",
+  "version": "0.0.1",
   "private": false,
   "author": "Bentley Systems, Inc.",
   "dependencies": {

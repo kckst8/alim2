@@ -6,7 +6,7 @@
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "@bentley/bwc-react-components": "1.0.0"
+    "@bentley/bwc-ts-react-components": "0.0.1"
   },
   "devDependencies": {
     "@types/node": "^9.4.6",

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { MediumLoader } from '@bentley/bwc-react-components/components/Loaders/MediumLoader';
+import { MediumLoader } from '@bentley/bwc-ts-react-components/components/Loaders/MediumLoader';
 
 export interface FeatureProps {
     featureProps?: any;
