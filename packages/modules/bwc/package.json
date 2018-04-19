@@ -18,5 +18,8 @@
     "@types/react-dom": "^16.0.5",
     "typescript": "^2.7.2",
     "node-sass-chokidar": "^0.0.3"
+  },
+  "publishConfig":{
+    "registry":"https://npm.bentley.com/npm/npm/"
   }
 }
